@@ -144,6 +144,14 @@
                         </a>
                     </li>
                 @endcan
+                @can('certificates.view')
+                    <li>
+                        <a href="{{ route('dashboard.certificates.index') }}">
+                            <i class="fas fa-chart-bar"></i>
+                            <span>{{ __('dashboard.certificates') }}</span>
+                        </a>
+                    </li>
+                @endcan
 
                 @can('gallery_videos.view')
                     <li>

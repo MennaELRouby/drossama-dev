@@ -321,8 +321,14 @@ class PermissionSeeder extends Seeder
                 'parteners.update',
                 'parteners.delete',
             ],
-
-
+            'certificates' => [
+                'certificates.view',
+                'certificates.create',
+                'certificates.store',
+                'certificates.edit',
+                'certificates.update',
+                'certificates.delete',
+            ],
         ];
 
 
