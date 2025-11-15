@@ -11,11 +11,10 @@
 
     @if (isset($menus) && count($menus) > 0)
         @foreach ($menus as $menu)
-            <li>
+            <li @if($menu->children->isNotEmpty()) class="dropdown" @endif  >
                 <a href="{{ $menu->link }}">{{ $menu->name }}</a>
-            </li>
+            
             @if ($menu->children->isNotEmpty())
-            <li class="dropdown"><a href="{{ $menu->link }}">{{ $menu->name }}</a>
                 <ul>
                     @foreach ($menu->children as $child)
                     <li>
@@ -23,8 +22,8 @@
                     </li>
                     @endforeach
                 </ul>
+                @endif
             </li>
-            @endif
         @endforeach
     @endif
  
