@@ -28,4 +28,14 @@ class Album extends Model
         $locale = app()->getLocale();
         return $this->{'name_' . $locale} ?? $this->name_ar ?? $this->name_en;
     }
+
+    public function getImagePathAttribute()
+    {
+        return $this->image ? asset('storage/albums/' . $this->image) : asset('assets/dashboard/images/noimage.png');
+    }
+
+    public function getIconPathAttribute()
+    {
+        return $this->icon ? asset('storage/albums/' . $this->icon) : asset('assets/dashboard/images/noimage.png');
+    }
 }

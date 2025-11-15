@@ -42,8 +42,8 @@
                             </div>
 
                             <div class="form-group col-md-4">
-                                <label>{{__('dashboard.image')}} (225px * 225px max 1mb)</label>
-                                <input type="file" class="form-control" name="image">
+                                <label>{{__('dashboard.icon')}} (225px * 225px max 1mb)</label>
+                                <input type="file" class="form-control" name="icon">
                             </div>
 
                             
@@ -70,8 +70,8 @@
                         <div class="row">
 
                             <div class="form-group col-md-12">
-                                <label class="">{{__('dashboard.image')}} (225px * 225px max 1mb)</label>
-                                <input type="file" class="form-control" name="image">
+                                <label for="album_images" class="">{{__('dashboard.image')}} (225px * 225px max 1mb)</label>
+                                <input type="file" class="form-control" name="album_images[]" multiple accept="image/*">
                             </div>
                         </div>
                     </div>

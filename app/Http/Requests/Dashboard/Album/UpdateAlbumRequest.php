@@ -25,6 +25,10 @@ class UpdateAlbumRequest extends FormRequest
         return [
             'name_en' => ['nullable','string','max:255'],
             'name_ar' => ['nullable','string','max:255'],
+            'description_en' => ['nullable', 'string'],
+            'description_ar' => ['nullable', 'string'],
+            'image' => ['nullable', 'image', 'mimes:jpeg,png,gif,bmp,webp', 'max:2048'],
+            'icon' => ['nullable','image', 'mimes:jpeg,png,gif,bmp,webp','max:1024'],
             'order' => ['nullable'],
             'status' => ['nullable','boolean'],
             'show_in_home' => ['nullable','boolean'],
