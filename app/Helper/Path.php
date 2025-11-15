@@ -85,7 +85,7 @@ class Path
 
     private static function getConfigImage($configKey)
     {
-        $file = config("configrations.{$configKey}");
+        $file = config("settings.{$configKey}");
 
         if ($file && filter_var($file, FILTER_VALIDATE_URL)) {
             return $file;
