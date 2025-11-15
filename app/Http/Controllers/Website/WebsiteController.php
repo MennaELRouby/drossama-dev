@@ -112,7 +112,7 @@ class WebsiteController extends Controller
 
         // #call# placeholder will be replaced automatically by the model accessor
         $socialMediaLinks = SocialMediaHelper::getSocialMediaLinks();
-        return view('Website.service-details', compact('service', 'socialMediaLinks'));
+        return view('Website.service-details', compact('service', 'socialMediaLinks','services'));
     }
 
     public function categories()

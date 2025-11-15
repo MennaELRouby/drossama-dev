@@ -47,9 +47,9 @@
                 </div>
                 <div class="close-btn"><i class="icon fa fa-times"></i></div>
             </div>
-            <ul class="navigation clearfix">
+            {{-- <ul class="navigation clearfix">
                 <!--Keep This Empty / Menu will come through Javascript-->
-            </ul>
+            </ul> --}}
             <ul class="contact-list-one">
                 @foreach ($phones as $phone)
                     @if ($phone->type == 'phone')
@@ -89,7 +89,7 @@
     </div>
     <!-- End Mobile Menu -->
     <!-- Sticky Header  -->
-    <div class="sticky-header">
+    {{-- <div class="sticky-header">
         <div class="auto-container">
             <div class="inner-container">
                 <!--Logo-->
@@ -101,14 +101,14 @@
                 <!--Right Col-->
                 <div class="nav-outer">
                     <!-- Main Menu -->
-                    <nav class="main-menu">
+                    {{-- <nav class="main-menu">
                         <div class="navbar-collapse show collapse clearfix">
                             <ul class="navigation clearfix">
                             </ul>
                         </div>
-                    </nav><!-- Main Menu End-->
+                    </nav><!-- Main Menu End--> --}}
 
-                    <div class="outer-box">
+                    {{--}}<div class="outer-box">
                         <!-- Info Btn -->
                         @php
                             $whatsappPhone2 = $phones->where('type', 'whatsapp')->first();
@@ -125,7 +125,8 @@
                 </div>
             </div>
         </div>
-    </div><!-- End Sticky Menu -->
+    </div>--}}
+    <!-- End Sticky Menu --> 
 </header>
 <!--=============== Heder ============= -->
 <div class="hidden-bar-back-drop"></div>
