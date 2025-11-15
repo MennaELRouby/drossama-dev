@@ -1,0 +1,41 @@
+<?php
+
+namespace App\Http\Requests\Dashboard\Phones;
+
+use App\Traits\HasMultilingualValidation;
+use Illuminate\Foundation\Http\FormRequest;
+
+class UpdatePhoneRequest extends FormRequest
+{
+    use HasMultilingualValidation;
+
+    /**
+     * Determine if the user is authorized to make this request.
+     */
+    public function authorize(): bool
+    {
+        return true;
+    }
+
+    /**
+     * Get the validation rules that apply to the request.
+     *
+     * @return array<string, \Illuminate\Contracts\Validation\ValidationRule|array<mixed>|string>
+     */
+    public function rules(): array
+    {
+        $rules = [
+            'phone' => 'required|string|max:20',
+            'code' => 'nullable|string|max:5',
+            'email' => 'nullable|email|max:255',
+            'type' => 'required|in:phone,whatsapp',
+            'status' => 'boolean',
+            'order' => 'nullable|integer',
+        ];
+
+        // Add multilingual validation rules
+        $rules = array_merge($rules, $this->getMultilingualRules());
+
+        return $rules;
+    }
+}

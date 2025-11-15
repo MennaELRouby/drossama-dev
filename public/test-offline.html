@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Offline Data</title>
+</head>
+
+<body>
+    <h1>Test Offline Data</h1>
+    <button onclick="testOfflineData()">Test Offline Data</button>
+    <div id="result"></div>
+
+    <script>
+        async function testOfflineData() {
+            try {
+                console.log('Testing offline data...');
+
+                // Test API directly
+                const response = await fetch('/api/offline-data');
+                const data = await response.json();
+
+                console.log('API Response:', data);
+                document.getElementById('result').innerHTML = `
+                    <h3>API Response:</h3>
+                    <pre>${JSON.stringify(data, null, 2)}</pre>
+                `;
+
+                // Test Service Worker cache
+                if ('caches' in window) {
+                    const cache = await caches.open('offline-data-cache');
+                    const cachedResponse = await cache.match('/api/offline-data');
+
+                    if (cachedResponse) {
+                        const cachedData = await cachedResponse.json();
+                        console.log('Cached Data:', cachedData);
+                        document.getElementById('result').innerHTML += `
+                            <h3>Cached Data:</h3>
+                            <pre>${JSON.stringify(cachedData, null, 2)}</pre>
+                        `;
+                    } else {
+                        console.log('No cached data found');
+                        document.getElementById('result').innerHTML += '<p>No cached data found</p>';
+                    }
+                }
+
+            } catch (error) {
+                console.error('Error:', error);
+                document.getElementById('result').innerHTML = `<p>Error: ${error.message}</p>`;
+            }
+        }
+
+        // Auto-test on page load
+        window.addEventListener('load', () => {
+            console.log('Page loaded, testing offline data...');
+            testOfflineData();
+        });
+    </script>
+</body>
+
+</html>

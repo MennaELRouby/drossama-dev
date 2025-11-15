@@ -1,0 +1,521 @@
+/* Slider Specific Styles */
+
+/* 
+    لتغيير انيميشن الصورة، قم بتعديل السطر التالي:
+    .swiper-slide img { animation: gentleZoom 12s ease-in-out infinite alternate; }
+    
+    الخيارات المتاحة:
+    
+    🔍 انيميشنات الزووم:
+    - gentleZoom: زووم خفيف (1.03x) - الحالي
+    - subtleZoom: زووم خفيف جداً (1.01x)
+    
+    🎯 انيميشنات بدون زووم:
+    - horizontalShift: حركة أفقية خفيفة
+    - verticalShift: حركة عمودية خفيفة
+    - circularMotion: حركة دائرية خفيفة
+    - waveEffect: حركة موجة خفيفة
+    - pulseEffect: نبضة خفيفة
+    
+    🔄 انيميشنات أخرى:
+    - gentleRotate: دوران خفيف
+    - opacityFade: تغيير الشفافية
+    - combinedMotion: مزيج من الحركات
+    
+    مثال للاستخدام:
+    .swiper-slide img { animation: circularMotion 8s ease-in-out infinite; }
+*/
+
+/* Slider Container */
+.main-swiper-section {
+    background-color: #171717 !important;
+    overflow: hidden;
+}
+
+/* Slider Caption */
+.slide-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 10;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.slide-title-animated {
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    opacity: 0;
+    animation: slideInFromTop 1.5s ease-out 0.5s forwards;
+}
+
+.slide-subtitle-animated {
+    font-size: 1.5rem;
+    opacity: 0;
+    animation: slideInFromBottom 1.5s ease-out 1s forwards;
+}
+
+/* Slider Animations */
+@keyframes slideInFromTop {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInFromBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.swiper-slide img {
+    animation: gentleZoom 12s ease-in-out infinite alternate;
+}
+
+@keyframes gentleZoom {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.03);
+    }
+}
+
+/* Alternative Animations - يمكن استخدام أي منها بدلاً من gentleZoom */
+
+/* انيميشن خفيف جداً */
+@keyframes subtleZoom {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.01);
+    }
+}
+
+/* انيميشن حركة أفقية خفيفة */
+@keyframes horizontalShift {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(10px);
+    }
+}
+
+/* انيميشن حركة عمودية خفيفة */
+@keyframes verticalShift {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-5px);
+    }
+}
+
+/* انيميشن دوران خفيف */
+@keyframes gentleRotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(1deg);
+    }
+}
+
+/* انيميشن تغيير الشفافية */
+@keyframes opacityFade {
+    0% {
+        opacity: 0.95;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* انيميشن مزيج من الحركات */
+@keyframes combinedMotion {
+    0% {
+        transform: scale(1) translateX(0) translateY(0);
+        opacity: 0.95;
+    }
+
+    100% {
+        transform: scale(1.02) translateX(5px) translateY(-3px);
+        opacity: 1;
+    }
+}
+
+/* انيميشن بدون زووم - حركة دائرية خفيفة */
+@keyframes circularMotion {
+    0% {
+        transform: translateX(0) translateY(0);
+    }
+
+    25% {
+        transform: translateX(5px) translateY(-3px);
+    }
+
+    50% {
+        transform: translateX(0) translateY(-5px);
+    }
+
+    75% {
+        transform: translateX(-5px) translateY(-3px);
+    }
+
+    100% {
+        transform: translateX(0) translateY(0);
+    }
+}
+
+/* انيميشن نبضة خفيفة */
+@keyframes pulseEffect {
+    0% {
+        transform: scale(1);
+        opacity: 0.9;
+    }
+
+    50% {
+        transform: scale(1.01);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 0.9;
+    }
+}
+
+/* انيميشن موجة خفيفة */
+@keyframes waveEffect {
+    0% {
+        transform: translateY(0) rotate(0deg);
+    }
+
+    25% {
+        transform: translateY(-2px) rotate(0.5deg);
+    }
+
+    50% {
+        transform: translateY(0) rotate(0deg);
+    }
+
+    75% {
+        transform: translateY(2px) rotate(-0.5deg);
+    }
+
+    100% {
+        transform: translateY(0) rotate(0deg);
+    }
+}
+
+/* Swiper Navigation */
+.swiper-button-next,
+.swiper-button-prev {
+    color: white;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-top: -25px;
+    transition: all 0.3s ease;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+    background: rgba(0, 0, 0, 0.6);
+    transform: scale(1.1);
+}
+
+.swiper-pagination-bullet {
+    background: white;
+    opacity: 0.5;
+    transition: all 0.3s ease;
+}
+
+.swiper-pagination-bullet-active {
+    opacity: 1;
+    transform: scale(1.2);
+}
+
+/* Enhanced Swiper Navigation */
+.main-swiper .swiper-button-next,
+.main-swiper .swiper-button-prev {
+    width: 48px;
+    height: 48px;
+    background: #5a8df6;
+    color: #fff;
+    border-radius: 50%;
+    box-shadow: 0 2px 8px #0002;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: background 0.2s, color 0.2s;
+    opacity: 0.95;
+}
+
+.main-swiper .swiper-button-next:hover,
+.main-swiper .swiper-button-prev:hover {
+    background: #4b92fe;
+    color: #fff;
+}
+
+.main-swiper .swiper-button-next:after,
+.main-swiper .swiper-button-prev:after {
+    font-size: 1.7rem;
+    font-weight: bold;
+}
+
+/* Mobile Responsive */
+@media (max-width: 767px) {
+    .main-swiper {
+        height: 45vh !important;
+        min-height: 220px;
+    }
+
+    .main-swiper .swiper-slide img {
+        height: 45vh !important;
+        min-height: 220px;
+        object-fit: cover !important;
+        width: 100vw !important;
+        max-width: 100vw !important;
+        display: block;
+    }
+
+    .main-swiper .slide-caption {
+        top: 18%;
+        padding: 0 10px;
+    }
+
+    .main-swiper .slide-caption h2 {
+        font-size: 1.3rem !important;
+    }
+
+    .main-swiper .slide-caption div {
+        font-size: 1rem !important;
+    }
+
+    .slide-title-animated {
+        font-size: 2.5rem;
+    }
+
+    .slide-subtitle-animated {
+        font-size: 1.2rem;
+    }
+
+    .main-swiper .swiper-button-next,
+    .main-swiper .swiper-button-prev {
+        width: 38px;
+        height: 38px;
+        font-size: 1.3rem;
+    }
+}
+
+/* Desktop Responsive */
+@media (min-width: 992px) {
+
+    .main-swiper-section .main-swiper,
+    .main-swiper-section .swiper-slide img {
+        height: 90vh !important;
+        min-height: 500px;
+    }
+}
+
+/* Tablet Responsive */
+@media (max-width: 768px) {
+    .slide-title-animated {
+        font-size: 2.5rem;
+    }
+
+    .slide-subtitle-animated {
+        font-size: 1.2rem;
+    }
+
+    .main-swiper-section .swiper-slide img {
+        height: 90vh !important;
+        min-height: 500px;
+    }
+}
+
+/* Before & After Slider Styles */
+.before-after-section {
+    background-color: #171717 !important;
+    padding: 80px 0;
+}
+
+.before-after-swiper {
+    padding: 20px 0 50px 0;
+}
+
+/* Simplified styles for image-only slider */
+
+.four-images-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.grid-image-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.grid-image-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+}
+
+.grid-image-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.grid-image-item img:hover {
+    transform: scale(1.05);
+}
+
+/* Gallery Button Styles */
+.gallery-button-container {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.gallery-btn {
+    display: inline-block;
+    background: linear-gradient(135deg, #4b92fe, #357abd);
+    color: white;
+    padding: 15px 30px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 600;
+    box-shadow: 0 8px 25px rgba(75, 146, 254, 0.3);
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.gallery-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 35px rgba(75, 146, 254, 0.4);
+    background: linear-gradient(135deg, #357abd, #2c5aa0);
+    color: white;
+    text-decoration: none;
+}
+
+.gallery-btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 6px 20px rgba(75, 146, 254, 0.3);
+}
+
+.gallery-btn i {
+    margin-left: 8px;
+    font-size: 1rem;
+}
+
+.before-after-swiper .swiper-button-next,
+.before-after-swiper .swiper-button-prev {
+    color: #4b92fe !important;
+    background: rgba(75, 146, 254, 0.1) !important;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    transition: all 0.3s ease;
+}
+
+.before-after-swiper .swiper-button-next:hover,
+.before-after-swiper .swiper-button-prev:hover {
+    background: rgba(75, 146, 254, 0.2) !important;
+    transform: scale(1.1);
+}
+
+.before-after-swiper .swiper-pagination-bullet {
+    background: #4b92fe;
+    opacity: 0.5;
+    transition: all 0.3s ease;
+}
+
+.before-after-swiper .swiper-pagination-bullet-active {
+    opacity: 1;
+    transform: scale(1.2);
+}
+
+/* Mobile Responsive for Before & After */
+@media (max-width: 768px) {
+    .before-after-section {
+        padding: 60px 0;
+    }
+
+    .four-images-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        padding: 10px;
+    }
+
+    .grid-image-item img {
+        height: 150px;
+    }
+
+    .gallery-btn {
+        padding: 12px 25px;
+        font-size: 1rem;
+    }
+
+    .before-after-swiper .swiper-button-next,
+    .before-after-swiper .swiper-button-prev {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+/* Extra small screens */
+@media (max-width: 480px) {
+    .four-images-grid {
+        grid-template-columns: 1fr;
+        gap: 10px;
+        padding: 5px;
+    }
+
+    .grid-image-item img {
+        height: 200px;
+    }
+
+    .gallery-btn {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+}

@@ -1,0 +1,79 @@
+# Laravel standard ignores
+/vendor/
+/node_modules/
+npm-debug.log
+yarn-error.log
+.pnp.*
+.phpunit.result.cache
+.php-cs-fixer.cache
+
+# Environment files
+.env
+.env.backup
+.env.production
+
+# IDE/editor
+/.vscode
+/.idea
+*.sublime-workspace
+*.sublime-project
+
+# Public build artifacts
+/public/hot
+/public/storage
+/public/build
+/public/css
+/public/js
+/public/mix-manifest.json
+
+# Storage (runtime data)
+/storage/*.key
+/storage/backups
+/storage/debugbar
+/storage/framework/cache/*
+/storage/framework/sessions/*
+/storage/framework/testing/*
+/storage/framework/views/*
+/storage/logs/*
+/storage/app/public/*
+
+# Google Service Account Files (CRITICAL: Never commit these!)
+/storage/app/google-service-account.json
+/storage/app/google-service-account.json.backup
+/storage/app/*.json
+
+# Bootstrap cache
+/bootstrap/cache/*
+
+# Local service account keys
+/config/service-accounts/*.json
+
+# Sitemap files
+/public/sitemap*.xml
+/public/sitemap*.txt
+/sitemap*.xml
+/sitemap*.txt
+
+# Robots.txt - prevent conflicts
+/public/robots.txt
+robots.txt
+
+# Build files
+/build
+/dist
+/public/dist
+
+# Package managers
+composer.phar
+package-lock.json
+yarn.lock
+
+# Testing
+.phpunit.cache
+coverage.xml
+.coverage
+htmlcov/
+
+# System files
+.DS_Store
+Thumbs.db

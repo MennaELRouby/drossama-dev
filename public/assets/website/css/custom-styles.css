@@ -1,0 +1,114 @@
+/* Custom Styles for Dark Mode */
+
+/* Dark Mode Enhancements */
+body {
+    background-color: #171717 !important;
+    color: #ffffff !important;
+}
+
+.page-wrapper {
+    background-color: #171717 !important;
+}
+
+.main-swiper-section {
+    background-color: #171717 !important;
+}
+
+/* Dark mode for all sections */
+section {
+    background-color: #171717 !important;
+}
+
+/* Additional Dark Mode Styles */
+.header-style-one,
+.header-style-two,
+.header-style-three,
+.header-style-four {
+    background-color: #171717 !important;
+    border-bottom: 1px solid #333 !important;
+}
+
+.about-section,
+.services-section,
+.testimonial-section,
+.gallery-section,
+.contact-section {
+    background-color: #171717 !important;
+}
+
+.footer-style-one,
+.footer-style-two {
+    background-color: #0f0f0f !important;
+}
+
+.theme-btn {
+    background-color: #4b92fe !important;
+    color: white !important;
+}
+
+.theme-btn:hover {
+    background-color: #357abd !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #ffffff !important;
+}
+
+p,
+span,
+div {
+    color: #e0e0e0 !important;
+}
+
+.card,
+.inner-box,
+.content-box {
+    background-color: #222020 !important;
+    border: 1px solid #333 !important;
+}
+
+/* Additional Animations */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .slide-title-animated {
+        font-size: 2.5rem;
+    }
+
+    .slide-subtitle-animated {
+        font-size: 1.2rem;
+    }
+
+    .main-swiper-section .swiper-slide img {
+        height: 90vh !important;
+        min-height: 500px;
+    }
+}

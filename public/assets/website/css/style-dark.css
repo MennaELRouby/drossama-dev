@@ -1,0 +1,421 @@
+:root {
+  --dark-color1: #171717;
+  --dark-color2: #222020;
+  --dark-color3: #2b242b;
+  --dark-color4: #212529;
+}
+
+.bg-dark-1 {
+  background-color: var(--dark-color1) !important;
+}
+
+.bg-dark-2 {
+  background-color: var(--dark-color2) !important;
+}
+
+.bg-dark-3 {
+  background-color: var(--dark-color3) !important;
+}
+
+body,
+.sticky-header,
+.page-wrapper,
+.header-style-one,
+.header-style-two .main-box,
+.header-style-three,
+.header-style-four .header-lower,
+.header-style-four .sticky-header,
+.banner-section,
+.about-section,
+.services-block .inner-box,
+.call-to-action .bg-image:before,
+.project-block .image-box .info-box .title,
+.team-section,
+.process-section,
+.process-block .inner-box,
+.counter-block .inner:hover .icon,
+.banner-section-two,
+.about-section-three,
+.service-block-two .inner-box .content-box,
+.about-section-four,
+.call-to-action-two .outer-box,
+.pricing-block .inner-box .title-box:after,
+.pricing-block .inner-box .btn-box .theme-btn,
+.team-section-two,
+.team-section-two .team-carousel .owl-nav .owl-prev,
+.team-section-two .team-carousel .owl-nav .owl-next,
+.testimonial-section-two,
+.counter-block-two .icon,
+.footer-style-two,
+.banner-section-three .bg-image:before,
+.about-section-five .content-column .inner-column .btn-box .theme-btn,
+.about-section-five .image-column .video-box .play-btn .icon,
+.services-section-three,
+.call-to-action-three .outer-box .links-column,
+.project-block-three .info-box .read-more .icon,
+.team-block-three .image-box .share-icon,
+.team-block-three .inner-box:hover .share-icon,
+.testimonial-section-three,
+.counter-block-three .inner,
+.pricing-section-two,
+.pricing-block-two .inner-box .content-box .btn-box .theme-btn,
+.news-section-three,
+.footer-style-three,
+.footer-style-three .footer-bottom,
+.banner-section-four,
+.about-section-seven .image-column .inner-column .exp-box .inner-box,
+.subscribe-section .bg:before,
+.project-block-four .inner-box .info-box,
+.testimonial-block-four .info-box .inner .quote-icon,
+.counter-block-four .icon-box .icon,
+.newsletter-form-one .theme-btn,
+.header-style-five,
+.banner-section-five,
+.about-section-eight,
+.services-section-five,
+.fun-fact-section-five .fact-counter .bg-image::before,
+.news-block-five .inner-box .content-box:before,
+.about-section-nine,
+.services-block-six .inner-box .content-box .icon-box .icon,
+.process-block-five .inner-box .bottom-box,
+.footer-style-six,
+.banner-section-six .info-box,
+.header-style-seven,
+.banner-section-seven .slide-item .content-box,
+.about-section-ten,
+.about-section-ten .content-column .inner-column .info-box .inner-box .icon,
+.project-block-seven .image-box .info-box .text,
+.testimonial-block-seven .rating,
+.testimonial-block-seven .thumb:before {
+  /* background-color: #ffffff; */
+}
+
+a {
+  color: inherit;
+}
+
+.header-style-one .header-top,
+.header-style-one .main-box .outer-box .toggle-hidden-bar,
+.header-style-two .logo-box,
+.header-style-three .main-box .logo-box,
+.services-section,
+.services-block .inner-box .image-box .icon-box .icon,
+.services-block .inner-box:hover .image-box .icon-box .icon,
+.team-section .team-carousel .owl-nav .owl-prev,
+.team-section .team-carousel .owl-nav .owl-next,
+.team-block .info-box,
+.process-block .inner-box .count,
+.about-section-two,
+.testimonial-block .content-box .quote-icon .icon,
+.counter-block .icon,
+.services-section-two,
+.pricing-section,
+.call-to-action-two,
+.team-block-two .info-box,
+.footer-style-two .footer-bottom,
+.social-icon-three li a,
+.service-block-three .inner-box .content-box,
+.call-to-action-three .outer-box .content-column,
+.default-navs .owl-next,
+.default-navs .owl-prev,
+.testimonial-block-three .inner-box,
+.testimonial-section-three .owl-carousel .owl-dots .owl-dot,
+.counter-block-three .icon,
+.pricing-block-two .inner-box,
+.footer-style-three .newsletter-widget .widget-content,
+.team-block-four .info-box,
+.process-block-three .inner-box,
+.testimonial-block-four .inner-box,
+.news-block-four .inner-box .content-box,
+.about-section-eight .content-column .inner-column .info-box-two .inner-box .clients-thumb li .icon,
+.about-section-eight .image-column .inner-column .experience-box .inner-box,
+.services-block-five .inner-box,
+.team-block-five .info-box,
+.process-block-four .inner-box,
+.about-section-nine .image-column .inner-column .caption-box .inner-box,
+.about-section-nine .image-column .inner-column .experience-box .inner-box,
+.project-block-six .inner-box .image-box:before,
+.pricing-block-three .inner-box,
+.process-block-five .inner-box,
+.footer-style-six .footer-bottom .inner-container,
+.news-block-six .inner-box .content-box,
+.header-style-seven .main-box .btn-box,
+.about-section-ten .image-column .inner-column .experience-box .inner-box,
+.team-block-seven .info-box,
+.process-block-six .inner-box,
+.news-block-seven .inner-box .content-box {
+  /* background-color: var(--dark-color2); */
+}
+
+.service-block-two .inner-box:hover .btn-box .read-more,
+.service-block-two .inner-box .btn-box .read-more,
+.pricing-block .inner-box .title-box:before,
+.testimonial-block-four .info-box {
+  background-color: var(--dark-color3);
+}
+
+.testimonial-section .owl-carousel .owl-dots .owl-dot {
+  background-color: var(--dark-color3);
+}
+
+.mixitup-gallery .filter-btns .filter:hover,
+.mixitup-gallery .filter-btns .filter.active,
+.team-block-four .inner-box:hover .info-box,
+.news-block-four .inner-box .content-box .btn-box .read-more,
+.team-block-five .inner-box:hover .info-box,
+.about-section-nine .image-column .inner-column .image-box:before,
+.pricing-block-three .inner-box:hover,
+.testimonial-section-six .owl-carousel .owl-nav .owl-prev,
+.testimonial-section-six .owl-carousel .owl-nav .owl-next,
+.project-block-seven .image-box .info-box .title {
+  background-color: var(--dark-color4);
+}
+
+.text-fill {
+  -webkit-text-fill-color: #fff;
+}
+
+.sticky-header .mobile-nav-toggler,
+.sticky-header .main-menu .navigation > li > a,
+.sticky-header .main-menu .navigation > li.current > a,
+.sticky-header .main-menu .navigation > li:hover > a,
+.header-style-one .main-box .outer-box .ui-btn,
+.header-style-two .main-menu .navigation > li > a,
+.main-menu .navigation > li > a,
+.header-style-four .main-menu .navigation > li > a,
+h2,
+h3,
+h5,
+h6,
+strong,
+.title a,
+.sec-title h2,
+.mixitup-gallery .filter-btns .filter:hover,
+.mixitup-gallery .filter-btns .filter.active,
+.project-block .image-box .info-box .title,
+.process-block .inner-box:hover .icon-box .icon,
+.news-block .inner-box .content-box .read-more,
+.testimonial-block-two .info-box .bottom-box .name,
+.pricing-block-two .inner-box .title-box .title,
+.pricing-block-two .inner-box .content-box .price,
+.footer-style-three .newsletter-widget .widget-content .title,
+.team-block-four .info-box .social-icons a,
+.header-style-five .main-box .nav-outer .navigation > li a,
+.header-search .form-group .icon i,
+.team-block-five .inner-box .info-box .social-icons a,
+.about-section-nine .content-column .inner-column .info-box .inner-box .count,
+.project-block-six .inner-box .info-box .title,
+.pricing-block-three .inner-box .content-box .feature-list li:before,
+.pricing-block-three .inner-box .content-box .title-box .price,
+.footer-style-six .widgets-section .widget-title,
+.team-block-seven .info-box .social-icons a {
+  color: #000000;
+}
+
+.newsletter-form-two input[type=email]::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.6) !important;
+}
+
+.newsletter-form-two input[type=email]::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.6) !important;
+}
+
+.newsletter-form-two input[type=email]:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.6) !important;
+}
+
+.newsletter-form-two input[type=email]::-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.6) !important;
+}
+
+.text,
+.light-text,
+.process-block .inner-box .count,
+.news-block .inner-box .content-box .post-meta li,
+.pricing-block .inner-box .content-box .feature-list li,
+.team-block-two .info-box .social-icons a,
+.team-block-two .info-box .designation,
+.testimonial-block-two .info-box .bottom-box .designation,
+.user-links li a,
+.footer-style-two .contact-widget li a,
+.footer-style-two .contact-widget li,
+.footer-style-two .footer-bottom .inner-container .copyright-text,
+.footer-style-two .footer-bottom .inner-container .footer-nav li a,
+.footer-style-two .recent-post .inner .post-info,
+.footer-style-three .footer-bottom .inner-container .copyright-text,
+.footer-style-three .footer-bottom .inner-container .footer-nav li a,
+.social-icon-three li a,
+.testimonial-block-three .info-box .designation,
+.counter-block-three .count-box,
+.counter-block-three .count-box .count-text,
+.counter-block-three .counter-title,
+.pricing-block-two .inner-box .content-box .price sub,
+.pricing-block-two .inner-box .content-box .feature-list li,
+.news-block-three .inner-box .content-box .post-meta li,
+.footer-style-three .contact-widget .contact-info-list li,
+.footer-style-three .contact-widget .contact-info-list li a,
+.newsletter-form-two input[type=email]::placeholder,
+.news-block-four .inner-box .content-box .post-meta li,
+.news-block-five .inner-box .content-box .post-meta li,
+.project-block-six .inner-box .info-box .text,
+.pricing-block-three .inner-box .content-box .feature-list li,
+.footer-style-six .address-widget .contact-list .contact-info .text a,
+.footer-style-six .footer-bottom .inner-container .copyright-text,
+.footer-style-six .footer-bottom .inner-container .footer-nav li a,
+.news-block-six .inner-box .content-box .post-meta li,
+.news-block-six .inner-box .content-box .read-more,
+.process-section-five .sec-title .sub-title,
+.news-section-six .sec-title .sub-title,
+.list-style-two.two-column li,
+.team-block-seven .info-box .designation,
+.news-block-seven .inner-box .content-box .post-meta li {
+  color: rgba(255, 255, 255, 0.6) !important;
+}
+
+.bg-white {
+  background-color: #fff;
+}
+
+.header-style-one,
+.header-style-two,
+.about-section .image-column .inner-column .image-2,
+.border-color,
+.services-block .inner-box .image-box .icon-box .icon,
+.team-section .team-carousel .owl-nav .owl-prev,
+.team-section .team-carousel .owl-nav .owl-next,
+.team-block .info-box,
+.team-block .share-icon,
+.process-block .inner-box,
+.testimonial-block .content-box .quote-icon .icon,
+.testimonial-block .content-box,
+.counter-block .inner,
+.news-block .inner-box .content-box,
+.news-block .inner-box .content-box .text,
+.service-block-two .inner-box .btn-box .read-more,
+.project-block-two .image-box .info-box,
+.pricing-block .inner-box,
+.team-section-two .team-carousel .owl-nav .owl-prev:hover,
+.team-section-two .team-carousel .owl-nav .owl-next:hover,
+.team-section-two .team-carousel .owl-nav .owl-prev,
+.team-section-two .team-carousel .owl-nav .owl-next,
+.team-block-two .info-box,
+.team-block-two .info-box .social-icons a,
+.testimonial-block-two .inner-box,
+.testimonial-block-two .info-box .content-box,
+.news-block-two .inner-box .content-box .theme-btn,
+.header-style-three,
+.about-section-five .image-column .video-box .play-btn .icon,
+.default-navs .owl-next,
+.default-navs .owl-prev,
+.testimonial-block-three .text,
+.testimonial-block-three .info-box .thumb,
+.pricing-block-two .inner-box .title-box,
+.pricing-block-two .inner-box .content-box .btn-box .theme-btn,
+.news-block-three .inner-box .content-box,
+.news-block-three .inner-box .content-box .title-box,
+.news-block-three .inner-box .content-box .btn-box .theme-btn,
+.newsletter-form-two input[type=email],
+.service-block-three .inner-box .title-box,
+.banner-section-two .content-columnn .inner-column .info-btn .icon,
+.about-section-four .content-columnn .inner-column .about-block .inner-box,
+.about-section-seven .image-column .inner-column .image-box img,
+.play-btn .icon,
+.service-block-four .inner-box .content-box,
+.subscribe-form .form-group input[type=text],
+.subscribe-form .form-group input[type=email],
+.team-block-four .info-box .social-icons a,
+.team-block-five .inner-box .info-box .social-icons a,
+.news-block-four .inner-box .content-box .post-meta,
+.about-section-eight .content-column .inner-column .info-box-two .inner-box .clients-thumb li img,
+.about-section-eight .content-column .inner-column .info-box-two .inner-box .clients-thumb li .icon,
+.about-section-eight .image-column .inner-column .image-2,
+.services-block-five .inner-box .btn-box,
+.team-block-five .info-box,
+.news-block-five .inner-box .content-box,
+.testimonial-section-five .testimonials .testimonial-thumbs .swiper-slide,
+.process-block-four .inner-box .title-box,
+.header-search .form-group,
+.about-section-nine .content-column .inner-column .info-box .inner-box,
+.services-block-six .inner-box .content-box,
+.pricing-block-three .inner-box,
+.process-block-five .inner-box,
+.process-block-five .inner-box .icon-box,
+.team-section-six .team-thumbs .swiper-slide-active,
+.header-style-seven .main-box .outer-box .toggle-hidden-bar,
+.team-block-seven .info-box .social-icons a,
+.news-block-seven .inner-box .content-box,
+.news-block-seven .inner-box .content-box .post-box,
+.banner-section-seven .banner-carousel .owl-nav .owl-prev,
+.banner-section-seven .banner-carousel .owl-nav .owl-next {
+  border-color: #4b92fe !important;
+}
+
+.header-style-two {
+  background-color: unset;
+}
+
+.counter-block .inner {
+  background-image: unset;
+}
+
+.banner-section-two .bottom-box:before,
+.contact-section:before {
+  opacity: 0.1;
+}
+
+.sponsors-outer .client-block img {
+  -webkit-filter: brightness(0) invert(1);
+          filter: brightness(0) invert(1);
+}
+
+.clients-carousel .slide-item img {
+  -webkit-filter: invert(1);
+          filter: invert(1);
+}
+
+.clients-section .slide-item a:hover {
+  background-color: inherit;
+}
+
+.deals-section-v3 .deals-block-v3 .inner-box {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.header-style-four .header-top {
+  background: -webkit-gradient(linear, right top, left top, from(#000000), color-stop(#130c0c), to(#251919));
+  background: linear-gradient(to left, #000000, #130c0c, #251919);
+}
+
+.shape-3 {
+  background-image: url(../images/banner/shape-3-dark.png);
+}
+
+.shape-4 {
+  background-image: url(../images/banner/shape-4-dark.png);
+}
+
+.icon-dots {
+  background-image: url(../images/banner/icon-dots-dark.png);
+}
+
+.testi-funcfact-section,
+.funfacts-section .funcfact-column .inner-column:before,
+.price-seciton .bg-pattern-v2 {
+  background-image: none;
+}
+
+.bg-none,
+.team-section-two .team-carousel .owl-nav .owl-prev:before,
+.team-section-two .team-carousel .owl-nav .owl-prev:after,
+.team-section-two .team-carousel .owl-nav .owl-next:before,
+.team-section-two .team-carousel .owl-nav .owl-next:after {
+  background: none;
+}
+
+.contact-form .form-group textarea {
+  background-color: #0a090f;
+}
+.contact-form .form-group input:not([type=submit]) {
+  background-color: #0a090f;
+}

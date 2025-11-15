@@ -1,0 +1,36 @@
+# Security Enhancement for Laravel Application
+# This file provides additional security rules
+
+# Disable directory browsing
+Options -Indexes
+
+# Protect sensitive files
+<FilesMatch "^\.">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+# Protect specific file types
+<FilesMatch "\.(sql|zip|tar|gz|bak|backup|log|ini|env)$">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+# Prevent access to version control files
+<FilesMatch "^(\.git|\.svn|\.hg)">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+# Protect composer and package files
+<FilesMatch "^(composer\.(json|lock)|package(-lock)?\.json)$">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+# Block access to storage directory (except allowed uploads)
+<DirectoryMatch "^.*/storage(?!/uploads)">
+    Order allow,deny
+    Deny from all
+</DirectoryMatch>
+

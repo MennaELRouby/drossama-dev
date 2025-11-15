@@ -1,0 +1,72 @@
+{
+  "name": "ميبيكوم - خدمات تطوير الويب والحلول الرقمية",
+  "short_name": "ميبيكوم",
+  "description": "خدمات تطوير الويب والحلول الرقمية المتكاملة",
+  "start_url": "/tulip-dev/public/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#007bff",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/tulip-dev/public/favicon.ico",
+      "sizes": "16x16 32x32 48x48",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "/tulip-dev/public/assets/website/images/icon-152x152.svg",
+      "sizes": "152x152",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/tulip-dev/public/assets/website/images/icon-192x192.svg",
+      "sizes": "192x192",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/tulip-dev/public/assets/website/images/icon-512x512.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": [
+    "business",
+    "productivity",
+    "utilities"
+  ],
+  "lang": "ar",
+  "dir": "rtl",
+  "scope": "/tulip-dev/public/",
+  "prefer_related_applications": false,
+  "related_applications": [],
+  "screenshots": [],
+  "shortcuts": [
+    {
+      "name": "الصفحة الرئيسية",
+      "short_name": "الرئيسية",
+      "description": "الصفحة الرئيسية للموقع",
+      "url": "/tulip-dev/public/ar",
+      "icons": [
+        {
+          "src": "/tulip-dev/public/favicon.ico",
+          "sizes": "16x16 32x32 48x48"
+        }
+      ]
+    },
+    {
+      "name": "Our Services",
+      "short_name": "Services",
+      "description": "Our Services",
+      "url": "/tulip-dev/public/en/services",
+      "icons": [
+        {
+          "src": "/tulip-dev/public/favicon.ico",
+          "sizes": "16x16 32x32 48x48"
+        }
+      ]
+    }
+  ]
+}
