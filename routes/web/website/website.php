@@ -15,7 +15,7 @@ Route::get('why-us', [WebsiteController::class, 'whyUs'])->name('why-us');
 Route::get('services', [WebsiteController::class, 'services'])->name('services');
 Route::get('services/{slug}', [WebsiteController::class, 'serviceDetails'])->name('serviceDetails');
 Route::get('contact-us', [WebsiteController::class, 'showContactUs'])->name('contact-us');
-Route::post('save-contact-us', [WebsiteController::class, 'saveContactUs'])->name('saveConatct')->middleware('throttle:2');
+Route::post('save-contact-us', [WebsiteController::class, 'saveContactUs'])->name('saveContact')->middleware('throttle:2');
 Route::get('thank-you', [WebsiteController::class, 'thankYou'])->name('thank-you');
 Route::get('faqs', [WebsiteController::class, 'faqs'])->name('faqs');
 Route::get('products', [WebsiteController::class, 'products'])->name('products');

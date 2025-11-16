@@ -7,11 +7,11 @@
          </ul>
      </div>
  @endif
- <form id="contact_form" name="contact_form" class="" action="{{ route('website.saveConatct') }}" method="post">
+ <form id="contact_form" name="contact_form" class="" action="{{ route('website.saveContact') }}" method="POST">
      @csrf
-     <input type="hidden" name="_token" value="FtMWS0ink9X7SIeCmhFWc8JMLYzv92lavdMKxsjF" autocomplete="off">
+     {{-- <input type="hidden" name="_token" value="FtMWS0ink9X7SIeCmhFWc8JMLYzv92lavdMKxsjF" autocomplete="off"> --}}
      <div class="row">
-         <input type="hidden" name="recaptcha_token" id="recaptcha_token">
+         {{-- <input type="hidden" name="recaptcha_token" id="recaptcha_token"> --}}
          <div class="col-sm-6">
              <div class="mb-3">
                  <input name="name" class="form-control" type="text" value="{{ old('name') }}"
@@ -38,17 +38,20 @@
      <div class="mb-3">
          <textarea name="message" class="form-control required" rows="7" placeholder="{{ __('website.message') }}">{{ old('message') }}</textarea>
      </div>
-     @if (config('captcha.sitekey') && config('captcha.sitekey') !== 'Key')
+     {{-- @if (config('captcha.sitekey') && config('captcha.sitekey') !== 'Key')
          <div class="form-group col-lg-12 col-md-12">
              <div class="g-recaptcha" data-sitekey="{{ config('captcha.sitekey') }}"></div>
          </div>
-     @endif
+     @endif --}}
      <div class="mb-5">
          <input name="form_botcheck" class="form-control" type="hidden" value="" />
          <button type="submit" class="theme-btn btn-style-one" data-loading-text="Please wait..."><span
                  class="btn-title">{{ __('website.send') }}</span></button>
      </div>
  </form>
+
+
+
  @if (config('captcha.sitekey') && config('captcha.sitekey') !== 'Key')
      <script src="https://www.google.com/recaptcha/api.js?render={{ config('captcha.sitekey') }}"></script>
 
