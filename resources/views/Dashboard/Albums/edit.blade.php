@@ -58,14 +58,14 @@
                             </div>
 
                             <div class="form-group col-md-6">
-                                <label>{{ __('dashboard.image') }} (225px * 225px max 1mb)</label>
-                                <input type="file" class="form-control" name="image">
+                                <label>{{ __('dashboard.icon') }} (225px * 225px max 1mb)</label>
+                                <input type="file" class="form-control" name="icon">
 
                             </div>
 
                             <div class=" form-group  col-md-2">
-                                <label for="">{{ __('dashboard.image') }}</label>
-                                <img src="{{ $album->image_path }}" width="250">
+                                <label for="">{{ __('dashboard.icoon') }}</label>
+                                <img src="{{ $album->icon_path }}" width="250">
                             </div>
 
                             <div class="form-group col-md-4">

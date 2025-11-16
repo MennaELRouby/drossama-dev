@@ -4,6 +4,7 @@ namespace App\Services\Dashboard;
 
 use App\Models\Album;
 use Illuminate\Support\Facades\DB;
+use App\Helper\Media;
 
 class AlbumService
 {
@@ -12,6 +13,15 @@ class AlbumService
         DB::beginTransaction();
         try {
             $album = Album::create($data);
+             if ($request->hasFile('image')) {
+                $path = Media::uploadAndAttachImageStorage($request->file('image'), 'albums');
+                $album->update(['image' => $path]);
+            }
+
+            if ($request->hasFile('icon')) {
+                $path = Media::uploadAndAttachImageStorage($request->file('icon'), 'albums');
+                $album->update(['icon' => $path]);
+            }
             DB::commit();
             return $album;
         } catch (\Exception $e) {
@@ -24,6 +34,13 @@ class AlbumService
     {
         DB::beginTransaction();
         try {
+             if ($request->hasFile('image')) {
+                $data['image'] = Media::uploadAndAttachImageStorage($request->file('image'), 'albums');
+            }
+
+            if ($request->hasFile('icon')) {
+                $data['icon'] = Media::uploadAndAttachImageStorage($request->file('icon'), 'albums');
+            }
             $album->update($data);
             DB::commit();
             return $album;
