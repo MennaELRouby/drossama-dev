@@ -29,8 +29,8 @@
         <div class="row">
             <div class="col-xl-7 col-lg-6">
                 <div class="sec-title">
-                    <span class="sub-title">Send us email</span>
-                    <h2>Feel free to write</h2>
+                    <span class="sub-title">{{ __('website.Send us email') }}</span>
+                    <h2>{{ __('website.Feel free to write') }}</h2>
                 </div>
                 <!-- Contact Form -->
                @include('components.website.partials.form')
@@ -38,7 +38,7 @@
             <div class="col-xl-5 col-lg-6">
                 <div class="contact-details__right">
                     <div class="sec-title">
-                        <h2>Get in touch</h2>
+                        <h2>{{__('website.Get in touch with us')}}</h2>
                     </div>
                     <ul class="list-unstyled contact-details__info">
                         <li>
@@ -46,7 +46,7 @@
                                 <span class="fas fa-phone-alt"></span>
                             </div>
                             <div class="text">
-                                <h6>Call Us</h6>
+                                <h6>{{__('website.call_us')}}</h6>
                                 @foreach ($phones as $phone)
                                     <a href="tel:+{{ $phone->code }}{{ $phone->phone }}">{{ $phone->phone }}</a>
                                     <br>
@@ -58,7 +58,7 @@
                                 <span class="fas fa-envelope"></span>
                             </div>
                             <div class="text">
-                                <h6>E.mail</h6>
+                                <h6>{{__('website.email')}}</h6>
                                 <a href="mailto:{{ config('settings.site_email') }}">{{ config('settings.site_email') }}</a>
                             </div>
                         </li>
@@ -67,7 +67,7 @@
                                 <span class="fas fa-map-marker"></span>
                             </div>
                             <div class="text">
-                                <h6>Addresses</h6>
+                                <h6>{{__('website.address')}}</h6>
                                 @foreach ($site_addresses as $address)
                                     <span>
                                         <a href="{{ $address->map_link }}" target="_blank">{{ $address->address }}</a>

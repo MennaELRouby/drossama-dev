@@ -91,7 +91,7 @@
                                 @if ($site_addresses && $site_addresses->isNotEmpty())
                                     <li>
                                         <i class="icon fas fa-map-marker"></i>
-                                        <span class="title">{{ __('website.addresses') }}</span>
+                                        <span class="title">{{ __('website.address') }}</span>
                                         <div class="text"><a href="{{ $site_addresses->first()->map_link ?? '#' }}"
                                                 target="_blank">{{ $site_addresses->first()->address ?? '' }}</a>
                                         </div>

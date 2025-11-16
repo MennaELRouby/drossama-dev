@@ -32,14 +32,14 @@
                                </a>
                            </div>
                        </div>
-                       @foreach($sections as $section)
-                       @if($section->key == 'testimonial')
-                       <!-- يمين: صورة الطبيب -->
-                       <div style="flex:1; min-width:300px; text-align:center;">
-                           <img src="{{ $section->image_path }}" alt="{{ $section->name }}"
-                               style="max-width:100%; border-radius:16px; box-shadow:0 4px 24px #0005;">
-                       </div>
-                       @endif
+                       @foreach ($sections as $section)
+                           @if ($section->key == 'testimonial')
+                               <!-- يمين: صورة الطبيب -->
+                               <div style="flex:1; min-width:300px; text-align:center;">
+                                   <img src="{{ $section->image_path }}" alt="{{ $section->name }}"
+                                       style="max-width:100%; border-radius:16px; box-shadow:0 4px 24px #0005;">
+                               </div>
+                           @endif
                        @endforeach
                    </div>
                </div>
