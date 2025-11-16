@@ -25,7 +25,7 @@
                 <!-- Footer Column -->
                 <div class="footer-column col-xl-3 col-lg-6 col-md-6 col-sm-12">
                     <div class="footer-widget about-widget">
-                        <h4 class="widget-title">{{ __('website.about_us') }}</h4>
+                        <h4 class="widget-title">{{ config('settings.site_short_name') }}</h4>
                         <div class="widget-content">
                             <div class="text">
                                 <p>{{ config('settings.site_description') }}</p>
