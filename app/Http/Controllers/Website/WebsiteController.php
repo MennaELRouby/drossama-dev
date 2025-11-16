@@ -29,6 +29,7 @@ use Illuminate\Http\Request;
 use App\Models\Category;
 use App\Models\Section;
 use App\Models\Album;
+use App\Models\Testimonial;
 
 class WebsiteController extends Controller
 {
@@ -417,6 +418,13 @@ class WebsiteController extends Controller
         $data['sections'] = \App\Models\Section::all();
         $data['socialMediaLinks'] = SocialMediaHelper::getSocialMediaLinks();
         return view('Website.gallery-videos', $data);
+    }
+    public function testimonials()
+    {
+        $data['testimonials'] = Testimonial::active()->get();
+        $data['sections'] = \App\Models\Section::all();
+        $data['socialMediaLinks'] = SocialMediaHelper::getSocialMediaLinks();
+        return view('Website.testimonials', $data);
     }
 
     public function faqs()

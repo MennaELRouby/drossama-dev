@@ -2,7 +2,7 @@
 
     <!-- start banner -->
     @foreach ($sections as $section)
-        @if ($section->key == 'videos')
+        @if ($section->key == 'video')
             @include('Website.partials._banner', ['page_title' => $section->title])
         @endif
     @endforeach

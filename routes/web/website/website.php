@@ -31,3 +31,4 @@ Route::get('careers', [WebsiteController::class, 'careers'])->name('careers');
 Route::post('save-application', [WebsiteController::class, 'saveApplication'])->name('saveApplication');
 Route::get('gallery-photos', [WebsiteController::class, 'galleryPhotos'])->name('galleryPhotos');
 Route::get('gallery-videos', [WebsiteController::class, 'galleryVideos'])->name('galleryVideos');
+Route::get('testimonials', [WebsiteController::class, 'testimonials'])->name('testimonials');
