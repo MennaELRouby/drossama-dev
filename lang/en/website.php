@@ -157,7 +157,7 @@ return [
     'follow_us_on'=>'Follow us on',
     'Send us email'=>'Send us email',
     'Feel free to write'=>'Feel free to write',
-    ''=>'',
+    'certifcates'=>'Certifcates',
     ''=>'',
     ''=>'',
     ''=>'',

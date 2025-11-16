@@ -35,7 +35,7 @@
     <section class="team-section-two">
         <div class="auto-container">
             <div class="sec-title">
-                <h2>{{ __('website.certifcate') }}</h2>
+                <h2>{{ __('website.certifcates') }}</h2>
             </div>
 
             <div class="team-carousel owl-carousel owl-theme default-navs">

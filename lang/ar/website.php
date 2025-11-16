@@ -153,5 +153,5 @@ return [
     'about_us'=>'من نحن',
     'Send us email'=>'راسلنا عبر البريد الإلكتروني',
     'Feel free to write'=>'لا تتردد في مراسلتنا',
-
+'certifcates'=>'الشهادات',
 ];
