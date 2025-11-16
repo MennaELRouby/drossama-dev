@@ -74,7 +74,7 @@
                                 @endphp
                                 @if ($footerPhone)
                                     <li>
-                                        <i class="icon lnr-icon-phone-handset"></i>
+                                        <i class="icon fas fa-phone-square-alt"></i>
                                         <span class="title">{{ __('website.contact_us') }}</span>
                                         <div class="text"><a
                                                 href="tel:{{ $footerPhone->code ?? '' }}{{ $footerPhone->phone ?? '' }}">{{ $footerPhone->code ?? '' }}{{ $footerPhone->phone ?? '' }}</a>
@@ -82,7 +82,7 @@
                                     </li>
                                 @endif
                                 <li>
-                                    <i class="icon lnr-icon-envelope1"></i>
+                                    <i class="icon fas fa-envelope"></i>
                                     <span class="title">{{ __('website.email') }}</span>
                                     <div class="text"><a
                                             href="mailto:{{ config('settings.site_email') }}">{{ config('settings.site_email') }}</a>
@@ -90,7 +90,7 @@
                                 </li>
                                 @if ($site_addresses && $site_addresses->isNotEmpty())
                                     <li>
-                                        <i class="icon lnr-icon-map-marker"></i>
+                                        <i class="icon fas fa-map-marker"></i>
                                         <span class="title">{{ __('website.addresses') }}</span>
                                         <div class="text"><a href="{{ $site_addresses->first()->map_link ?? '#' }}"
                                                 target="_blank">{{ $site_addresses->first()->address ?? '' }}</a>
